@@ -21,14 +21,6 @@ module.exports = {
         allExtensions: true, // defaults to false
       },
     },
-    {
-      resolve: `gatsby-source-graphql`,
-      options: {
-        typeName: `SheetAPI`,
-        fieldName: `googleSheetAPI`,
-        url: `https://sheetdb.io/api/v1/h9lexamp72vky`,
-      },
-    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
