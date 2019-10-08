@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Desbravadores Bike CLub`,
+    description: `Clube de Pedal`,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -11,6 +11,22 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-typescript`,
+      options: {
+        isTSX: true, // defaults to false
+        jsxPragma: `React`, // defaults to "React"
+        allExtensions: true, // defaults to false
+      },
+    },
+    {
+      resolve: `gatsby-source-graphql`,
+      options: {
+        typeName: `SheetAPI`,
+        fieldName: `googleSheetAPI`,
+        url: `https://sheetdb.io/api/v1/h9lexamp72vky`,
       },
     },
     `gatsby-transformer-sharp`,
