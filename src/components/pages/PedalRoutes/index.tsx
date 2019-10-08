@@ -33,10 +33,10 @@ const PedalRoutes: React.FC = (props) => {
           <Card>
             <s.Item>Origem: {d.origem}</s.Item>
             <s.Item>Destino: {d.destino}</s.Item>
-            <s.Item>Distancia: {d.distancia}/km</s.Item>
+            <s.Item>Distância: {d.distancia}/km</s.Item>
             <s.Item>Tempo: {d.tempo}</s.Item>
-            <s.Item>Nivel: {d.nivel}</s.Item>
-            <s.Item>Observaçõees: {d.observações}</s.Item>
+            <s.Item>Nível: {d.nivel}</s.Item>
+            <s.Item>Observações: {d.observações}</s.Item>
           </Card>
         ))}
         <Button onClick={() => window.open("https://docs.google.com/spreadsheets/d/1D8ItKfFid94i25buH4SBYjFGSHpGAw3bJDLhpxRTIhw/edit?usp=sharing", "_blank")}>
