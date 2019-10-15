@@ -65,9 +65,6 @@ const Home: React.FC = () => {
             />
           ))}
         </Section>
-        <Section title="Galeria">
-          <p>Em breve</p>
-        </Section>
       </s.Container>
     </>
 
