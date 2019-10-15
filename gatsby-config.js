@@ -2,10 +2,19 @@ module.exports = {
   siteMetadata: {
     title: `Desbravadores Bike CLub`,
     description: `Clube de Pedal`,
-    author: `@gatsbyjs`,
+    author: `@pedal.desbravadores`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: 'gatsby-plugin-google-fonts',
+      options: {
+        fonts: [
+          'material icons',
+          'roboto:300,400,500,700',
+        ],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

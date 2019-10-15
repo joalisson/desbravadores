@@ -3,14 +3,12 @@ import { Link } from 'gatsby';
 
 import Layout from '../components/layout'
 import SEO from "../components/seo"
-import PedalRoutes from '../components/pages/PedalRoutes';
+import Home from '../components/pages/Home';
 
 const IndexPage: React.FC = () => (
   <Layout>
     <SEO title="Home" />
-    <p>Página em construção</p>
-    <Link to="/members">Membros do Clube no Strava</Link>
-    <PedalRoutes />
+    <Home /> 
   </Layout>
 )
 
